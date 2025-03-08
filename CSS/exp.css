@@ -1,0 +1,156 @@
+/*
+Theme Name: Satoru Real-Estate
+Author: Your Name
+Description: Real-Estate Theme for Mini Project
+Version: 1.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(homepage-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #000000;
+    color: white;
+    padding: 10px 20px;
+}
+
+h2 {
+    color: white;
+    font-size: xx-large;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.search-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 250px;
+}
+
+.search-container button {
+    padding: 10px;
+    border: none;
+    background-color: #ff4081;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color: #e63972;
+}
+
+.marquee {
+    background: transparent;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.properties {
+    padding: 20px;
+    text-align: center;
+}
+
+.property-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.property {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 250px;
+}
+
+.property img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.btn-view-details {
+    border: #ff4081;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: #ff4081;
+    color: white;
+}
+
+footer {
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}

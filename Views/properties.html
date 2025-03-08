@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Properties</title>
+    <link href="homepage.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Satoru Real-Estate</div>
+            <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="properties" class="properties">
+        <h2>Properties in <span id="city-name"></span></h2>
+        <div class="property-list" id="property-list">
+            <!-- Properties will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Satoru Real-Estate. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Sample data of properties available for each city
+        const cityProperties = {
+            mumbai: [
+                { title: "Luxury Villa", price: "₹40-100 Crore", img: "luxuryvilla.jpeg", url: "luxuryvilla.html" },
+                { title: "Modern Apartment", price: "$800,000", img: "modernapt.jpg", url: "apartment.html" }
+            ],
+            delhi: [
+                { title: "Cozy Cottage", price: "$400,000", img: "cozycottage.jpg", url: "cozycottage.html" }
+            ],
+            bangalore: [
+                { title: "Modern Apartment", price: "$800,000", img: "modernapt.jpg", url: "apartment.html" }
+            ]
+
+            // Add more cities and properties as needed
+        };
+
+        // Function to extract the city parameter from the URL
+        function getCityFromUrl() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('city')?.toLowerCase() || '';
+        }
+
+        // Function to display properties for the searched city
+        function displayProperties(city) {
+            const cityName = city.charAt(0).toUpperCase() + city.slice(1);
+            document.getElementById('city-name').textContent = cityName;
+
+            const propertyList = document.getElementById('property-list');
+            const properties = cityProperties[city];
+
+            if (properties && properties.length > 0) {
+                properties.forEach(property => {
+                    const propertyDiv = document.createElement('div');
+                    propertyDiv.classList.add('property');
+                    propertyDiv.innerHTML = `
+                        <img src="${property.img }" alt="${property.title}">
+                        <h3>${property.title}</h3>
+                        <p>${property.price}</p>
+                        <a href="${property.url}" class="btn-view-details">View Details</a>
+                    `;
+                    propertyList.appendChild(propertyDiv);
+                });
+            } else {
+                propertyList.innerHTML = `<p>No properties available for ${cityName}.</p>`;
+            }
+        }
+
+        // On page load, display the properties for the searched city
+        const city = getCityFromUrl();
+        if (city) {
+            displayProperties(city);
+        } else {
+            document.getElementById('property-list').innerHTML = '<p>Please search for a city first.</p>';
+        }
+    </script>
+</body>
+</html>

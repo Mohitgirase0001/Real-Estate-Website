@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(forogtpwd-background-background.png);
+    background-color: #f5f5f5; /* Light background for better readability */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgb(108, 178, 236);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+    color: #555; /* Slightly darker text for contrast */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 13px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #0056b3; /* Darker button on hover */
+    color: #ffffff;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.footer {
+    margin-top: 15px;
+}
+
+.footer a {
+    color: #0011ff; /* Link color */
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

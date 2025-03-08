@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Villas for Sale | Satoru Real-Estate</title>
+    <link href="luxury-villas.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background: #000000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .villa-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .villa {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .villa img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .villa h3 {
+            color: #333;
+        }
+
+        .villa p {
+            font-size: 16px;
+            color: #007bff;
+        }
+
+        .btn-view-details {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #ff4081;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .btn-view-details:hover {
+            background-color: #e63972;
+        }
+
+        footer {
+            background: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .villa {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Luxury Villas for Sale</h1>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="#properties">Properties</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="villa-container">
+            <div class="villa">
+                <img src="luxuryvilla.jpeg" alt="Luxury Villa 1">
+                <h3>Luxury Villa 1</h3>
+                <p>₹40 Crore</p>
+                <a href="luxuryvilla11.html" class="btn-view-details">View Details</a>
+            </div>
+            <div class="villa">
+                <img src="luxuryvilla1.jpeg" alt="Luxury Villa 2">
+                <h3>Luxury Villa 2</h3>
+                <p>₹70 Crore</p>
+                <a href="luxuryvilla12.html" class="btn-view-details">View Details</a>
+            </div>
+            <div class="villa">
+                <img src="luxuryvilla3.jpeg" alt="Luxury Villa 3">
+                <h3>Luxury Villa 3</h3>
+                <p>₹80 Crore</p>
+                <a href="luxuryvilla13.html" class="btn-view-details">View Details</a>
+            </div>
+            <div class="villa">
+                <img src="luxuryvilla5.jpeg" alt="Luxury Villa 4">
+                <h3>Luxury Villa 4</h3>
+                <p>₹100 Crore</p>
+                <a href="luxuryvilla14.html" class="btn-view-details">View Details</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Satoru Real-Estate. All rights reserved.</p>
+        <ul>
+            <li><a href="#home">Privacy Policy</a></li>
+            <li><a href="#about">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
+
+
+<!-- https://www.99acres.com/4-bhk-bedroom-independent-house-villa-for-sale-in-thakur-complex-kandivali-thakur-complex-mumbai-andheri-dahisar-4500-sq-ft-spid-L77323809 -->
+<!-- https://www.99acres.com/luxury-villas-in-mumbai-ffid -->
+<!-- https://www.99acres.com/4-bhk-bedroom-independent-house-villa-for-sale-in-mittal-ruia-park-juhu-western-mumbai-500-sq-ft-r1-spid-K76602917 -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Villa - Satoru Real-Estate</title>
+    <link href="homepage.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Additional styles for the luxury villa page */
+        .villa-header {
+            background-image: url('luxuryvilla-bg.jpg');
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .villa-details {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .villa-details img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .btn-back {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff4081;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn-back:hover {
+            background-color: #e63972;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Satoru Real-Estate</div>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#properties">Properties</a></li>
+                <li><a href="index.html#about">About Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="villa-header">
+        <h1>Luxury Villa</h1>
+        <p>$1,200,000</p>
+    </section>
+
+    <section class="villa-details">
+        <img src="luxuryvilla.jpeg" alt="Luxury Villa">
+        <h2>Description</h2>
+        <p>This exquisite luxury villa offers a perfect blend of comfort and elegance. Featuring spacious rooms, a private pool, and breathtaking views, it is designed for those who appreciate the finer things in life.</p>
+
+        <h2>Amenities</h2>
+        <ul>
+            <li>4 Bedrooms</li>
+            <li>5 Bathrooms</li>
+            <li>Swimming Pool</li>
+            <li>Garden</li>
+            <li>Parking Space</li>
+            <li>24/7 Security</li>
+        </ul>
+
+        <h2>Location</h2>
+        <p>Located in a prime area, this villa provides easy access to shopping centers, schools, and recreational spots.</p>
+
+        <a href="index.html#properties" class="btn-back">Back to Properties</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Satoru Real-Estate. All rights reserved.</p>
+        <ul>
+            <li><a href="#home">Privacy Policy</a></li>
+            <li><a href="#about">Terms of Service</a></li>
+        </ul>
+    </footer>
+</body>
+</html> -->
